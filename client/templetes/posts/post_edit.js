@@ -11,6 +11,7 @@ Template.postEdit.events({
 
     Posts.update(currentPostId, {$set: postProperties}, function(error) {
       if (error) {
+        throwError(error.reason);
         // display the error to the user
         alert(error.reason);
       } else {
