@@ -1,4 +1,4 @@
-<template name="layout">
+<!--template name="layout">
   <div class="container">
 	<header class="navbar navbar-default" role="navigation">
   	  <div class="navbar-header">
@@ -9,4 +9,12 @@
   	  {{> postsList}}
 	</div>
   </div>
+</template-->
+<template name="layout">  
+    <div class="container">
+        {{> header}}    
+        <div id="main">      
+        {{> yield}}    
+        </div>  
+    </div>
 </template>
